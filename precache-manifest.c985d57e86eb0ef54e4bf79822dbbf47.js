@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "aaa492d6136d882e924074fe72c8b40a",
+    "revision": "7d5e2387f7c6c743b0152493c681c2ce",
     "url": "/reactive-social-network/index.html"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/reactive-social-network/static/css/5.d53e07fb.chunk.css"
   },
   {
-    "revision": "02b97d06b39a8283adff",
-    "url": "/reactive-social-network/static/css/main.c53da3cf.chunk.css"
+    "revision": "c6cb1859682f1ed3c37c",
+    "url": "/reactive-social-network/static/css/main.8506404d.chunk.css"
   },
   {
     "revision": "9a3e4ddc417542d11184",
@@ -40,7 +40,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/reactive-social-network/static/js/5.941171ea.chunk.js"
   },
   {
-    "revision": "02b97d06b39a8283adff",
+    "revision": "c6cb1859682f1ed3c37c",
     "url": "/reactive-social-network/static/js/main.26889faf.chunk.js"
   },
   {
