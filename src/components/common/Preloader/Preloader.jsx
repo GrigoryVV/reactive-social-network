@@ -1,6 +1,6 @@
 import React from 'react';
 import css from './Preloader.module.css';
-import preloader from './../../../img/_preloader.gif';
+import preloader from './../../../img/preloader.gif';
 
 function Preloader(props) {
     return (
