@@ -1,0 +1,59 @@
+.wrap {
+    margin: 0 auto;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-column-gap: 2rem;
+    grid-template-rows: 1fr;
+}
+
+/* User component styles */
+
+.user_wrap {
+    display: grid;
+    grid-template-columns: 100px 1fr 120px;
+    grid-column-gap: 4rem;
+    grid-template-rows: 1fr;
+    margin: 1rem 0;
+}
+
+.user_avatar img {
+    width: 10rem;
+}
+
+.user_name {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.user_status {
+    font-size: 1.8rem;
+    margin: 1rem 0;
+}
+
+.user_location {
+    text-align: end;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.user_follow_btn {
+    align-self: center;
+}
+
+.user_follow_btn button {
+    width: 100%;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #fff;
+    border-radius: 2rem;
+    padding: 1rem;
+    background-color: #FB9D03;
+    cursor: pointer;
+}
+
+.user_follow_btn button:disabled {
+    background-color: rgb(104, 104, 104)
+}
+
+/*END User component styles END*/

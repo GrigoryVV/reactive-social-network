@@ -1,0 +1,10 @@
+.input_control.error input, .input_control.error textarea {
+    border: 1px solid red;
+}
+
+.input_control.error .input_info {
+    color: red;
+    margin: 1rem 0;
+    font-size: 1.4rem;
+    text-align: center;
+}

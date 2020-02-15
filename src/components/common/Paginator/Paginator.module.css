@@ -1,0 +1,16 @@
+.pages {
+    display: flex;
+    justify-content: center;
+}
+
+.pages span {
+    margin: 0 2rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.selectedPage {
+    font-weight: 700;
+    text-decoration: underline;
+    font-size: 1.8rem;
+}

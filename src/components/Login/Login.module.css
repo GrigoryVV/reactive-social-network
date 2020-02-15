@@ -1,0 +1,50 @@
+.wrap {
+    margin: 0 auto;
+    max-width: 600px;
+    display: grid;
+}
+
+.text_input {
+    margin: 2rem 0;
+}
+
+.text_input input {
+    text-align: center;
+    border: none;
+    background: linear-gradient(#ddd, #eee, #ddd);
+    border-radius: 2rem;
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    box-sizing: border-box;
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.checkbox_input {
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 2rem 0;
+}
+
+.submit_btn {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.submit_btn button {
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #fff;
+    border-radius: 2rem;
+    padding: 0.6rem 2rem;
+    background-color: #FB9D03;
+    cursor: pointer;
+}
+
+.login_error {
+    color: red;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+}

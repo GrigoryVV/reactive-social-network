@@ -1,0 +1,125 @@
+.wrap {
+    position: relative;
+}
+
+.fixed_header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    display: flex;
+    background-color: #fff;
+    align-items: center;
+    z-index: 999;
+}
+
+.nav {
+    margin: 2rem;
+}
+
+.nav a {
+    font-size: 2rem;
+    color: #000;
+    text-decoration: none;
+    margin: 0 2rem;
+}
+
+.nav .active_link {
+    color: #FB9D03;
+}
+
+.logo {
+    margin: 1rem auto;
+}
+
+.logo img {
+    display: block;
+    width: 6rem;
+}
+
+.logged {
+    margin: 1rem 4rem;
+    text-align: center;
+}
+
+.logged .user_name {
+    font-size: 1.4rem;
+}
+
+.logged button {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: #FB9D03;
+    border-radius: 2rem;
+    padding: 0.4rem 1rem;
+    cursor: pointer;
+}
+
+.login {
+    margin: 2rem 4rem 2rem 2rem;
+    display: flex;
+    position: relative;
+    align-items: flex-end;
+}
+
+.login_link a {
+    text-decoration: none;
+    color: #000;
+}
+
+.login_link .active_link {
+    color: #FB9D03;
+}
+
+.login::after {
+    content: "";
+    display: inline-block;
+    height: 2px;
+    width: 100%;
+    left: 0;
+    bottom: -10px;
+    position: absolute;
+    background-color: #737373;
+    transition: linear 300ms;
+}
+
+.login {
+    font-size: 2rem;
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+    transition: linear 300ms;
+}
+
+.login i {
+    font-size: 2rem;
+    padding-left: 1rem;
+}
+
+.login:hover::after {
+    background-color: #FB9D03;
+}
+
+.login:hover {
+    color: #FB9D03;
+}
+
+.cover {
+    height: 40rem;
+    width: 100%;
+    position: relative;
+    z-index: -10;
+}
+
+.cover::after {
+    content: '';
+    background: url(../../img/wallpaper.jpg) no-repeat center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -100;
+}

@@ -1,0 +1,11 @@
+.container {
+    position: absolute;
+    z-index: 5;
+    width: 100%;
+}
+
+.wrap img {
+    display: block;
+    margin: 10rem auto;
+    z-index: 5;
+}
