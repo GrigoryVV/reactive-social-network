@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/reactive-social-network/static/css/main.c53da3cf.chunk.css",
+    "main.js": "/reactive-social-network/static/js/main.26889faf.chunk.js",
+    "main.js.map": "/reactive-social-network/static/js/main.26889faf.chunk.js.map",
+    "runtime-main.js": "/reactive-social-network/static/js/runtime-main.d75495c2.js",
+    "runtime-main.js.map": "/reactive-social-network/static/js/runtime-main.d75495c2.js.map",
+    "static/js/2.43879be8.chunk.js": "/reactive-social-network/static/js/2.43879be8.chunk.js",
+    "static/js/2.43879be8.chunk.js.map": "/reactive-social-network/static/js/2.43879be8.chunk.js.map",
+    "static/css/3.b6659d6e.chunk.css": "/reactive-social-network/static/css/3.b6659d6e.chunk.css",
+    "static/js/3.3f0d696a.chunk.js": "/reactive-social-network/static/js/3.3f0d696a.chunk.js",
+    "static/js/3.3f0d696a.chunk.js.map": "/reactive-social-network/static/js/3.3f0d696a.chunk.js.map",
+    "static/css/4.c47616ac.chunk.css": "/reactive-social-network/static/css/4.c47616ac.chunk.css",
+    "static/js/4.9b2bf339.chunk.js": "/reactive-social-network/static/js/4.9b2bf339.chunk.js",
+    "static/js/4.9b2bf339.chunk.js.map": "/reactive-social-network/static/js/4.9b2bf339.chunk.js.map",
+    "static/css/5.d53e07fb.chunk.css": "/reactive-social-network/static/css/5.d53e07fb.chunk.css",
+    "static/js/5.941171ea.chunk.js": "/reactive-social-network/static/js/5.941171ea.chunk.js",
+    "static/js/5.941171ea.chunk.js.map": "/reactive-social-network/static/js/5.941171ea.chunk.js.map",
+    "index.html": "/reactive-social-network/index.html",
+    "precache-manifest.62b89d2e0719c9e2f9569632620bf63b.js": "/reactive-social-network/precache-manifest.62b89d2e0719c9e2f9569632620bf63b.js",
+    "service-worker.js": "/reactive-social-network/service-worker.js",
+    "static/css/3.b6659d6e.chunk.css.map": "/reactive-social-network/static/css/3.b6659d6e.chunk.css.map",
+    "static/css/4.c47616ac.chunk.css.map": "/reactive-social-network/static/css/4.c47616ac.chunk.css.map",
+    "static/css/5.d53e07fb.chunk.css.map": "/reactive-social-network/static/css/5.d53e07fb.chunk.css.map",
+    "static/css/main.c53da3cf.chunk.css.map": "/reactive-social-network/static/css/main.c53da3cf.chunk.css.map",
+    "static/js/2.43879be8.chunk.js.LICENSE": "/reactive-social-network/static/js/2.43879be8.chunk.js.LICENSE",
+    "static/media/_preloader.gif": "/reactive-social-network/static/media/_preloader.584b607f.gif",
+    "static/media/site_logo.jpg": "/reactive-social-network/static/media/site_logo.ab85e7a7.jpg",
+    "static/media/Header.module.css": "/reactive-social-network/static/media/wallpaper.cf634fd9.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d75495c2.js",
+    "static/js/2.43879be8.chunk.js",
+    "static/css/main.c53da3cf.chunk.css",
+    "static/js/main.26889faf.chunk.js"
+  ]
+}
