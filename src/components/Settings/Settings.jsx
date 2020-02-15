@@ -75,7 +75,7 @@ let SettingsForm = (props) => {
                 {
                     Object.keys(props.profileInfo.contacts).map(key => {
                         return (
-                            <div className="flex_wrap">
+                            <div key={key} className="flex_wrap">
                                 <span className={css.field_label}>
                                     {capitalizeString(key) + ":"}
                                 </span>

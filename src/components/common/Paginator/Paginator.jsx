@@ -13,8 +13,6 @@ function Paginator({
 
     let [currentPortion, setPortion] = useState(1);
 
-    console.log(currentPortion)
-
     for (let i = 1; i <= pagesCount; i++) {
         pages.push(i);
     }
