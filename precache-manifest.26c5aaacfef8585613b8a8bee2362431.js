@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7d5e2387f7c6c743b0152493c681c2ce",
+    "revision": "f50530d0e0aea144bb2dafd638b0d128",
     "url": "/reactive-social-network/index.html"
   },
   {
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/reactive-social-network/static/css/5.d53e07fb.chunk.css"
   },
   {
-    "revision": "c6cb1859682f1ed3c37c",
+    "revision": "edc8dc34c382b6c1f51c",
     "url": "/reactive-social-network/static/css/main.8506404d.chunk.css"
   },
   {
@@ -40,8 +40,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/reactive-social-network/static/js/5.941171ea.chunk.js"
   },
   {
-    "revision": "c6cb1859682f1ed3c37c",
-    "url": "/reactive-social-network/static/js/main.26889faf.chunk.js"
+    "revision": "edc8dc34c382b6c1f51c",
+    "url": "/reactive-social-network/static/js/main.14f0cd6a.chunk.js"
   },
   {
     "revision": "57fce62b5f1dc598186a",
@@ -49,7 +49,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   },
   {
     "revision": "584b607f5c2ff075429dc0e7b8d142ef",
-    "url": "/reactive-social-network/static/media/_preloader.584b607f.gif"
+    "url": "/reactive-social-network/static/media/preloader.584b607f.gif"
   },
   {
     "revision": "ab85e7a77b03b9aae909ae98d09f49e9",
