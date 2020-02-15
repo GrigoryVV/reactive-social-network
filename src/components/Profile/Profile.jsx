@@ -12,6 +12,7 @@ function Profile(props) {
                 status={props.status}
                 authedUserId={props.authedUserId}
                 updateUserStatus={props.updateUserStatus}
+                updateUserPhoto={props.updateUserPhoto}
             />
             <ProfilePostsContainer/>
             <ProfileRecent/>

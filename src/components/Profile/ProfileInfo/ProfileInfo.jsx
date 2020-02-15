@@ -2,7 +2,6 @@ import React from 'react';
 import css from '../Profile.module.css';
 import Preloader from '../../common/Preloader/Preloader';
 import unknownUser from './../../../img/unknownUserPhoto.png';
-// import ProfileStatus from './ProfileStatus';
 import ProfileStatusWithHooks from './ProfileStatusWithHooks';
 import { NavLink } from 'react-router-dom';
 
@@ -30,14 +29,24 @@ function ProfileInfo(props) {
             );
         }
     }
+    
+    function handleUploadPhoto(e) {
+        if (e.target.files.length > 0) {
+            props.updateUserPhoto(e.target.files[0])
+        }
+    }
 
     return (
         <div className={css.info}>
             <div className={css.avatar + " block"}>
-                {props.profileInfo.photos.large ? 
-                <img src={props.profileInfo.photos.large} alt="Avatar"/> :
-                <img src={unknownUser} alt="Avatar"/>}
-                
+                {props.profileInfo.photos.large
+                ? <img src={props.profileInfo.photos.large} alt="Avatar"/>
+                : <img src={unknownUser} alt="Avatar"/>}
+                {props.profileInfo.userId === props.authedUserId &&
+                    <div className={css.upload_photo}>
+                        <input type="file" onChange={handleUploadPhoto}/>
+                    </div>
+                }
             </div>
             <div className={css.descr + " block"}>
                 <h2 className="block_name">

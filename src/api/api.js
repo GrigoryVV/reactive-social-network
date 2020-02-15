@@ -42,6 +42,13 @@ export const profileAPI = {
     updateUserData(userData) {
         return samuraiAxios.put(`profile`, {...userData})
             .then(response => response.data);
+    },
+    updateUserPhoto(photo) {
+        return samuraiAxios.put(`profile/photo`, photo, {
+            headers: {
+                'Content-Type': 'multipart/form-data'
+            }
+        }).then(response => response.data);
     }
 };
 

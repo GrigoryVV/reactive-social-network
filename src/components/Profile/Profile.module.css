@@ -11,10 +11,30 @@
 
 .info .avatar {
     margin-top: -50%;
+    position: relative;
 }
 
 .info .avatar img {
     width: 100%;
+}
+
+.upload_photo {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    overflow: hidden;
+}
+
+.avatar:hover .upload_photo {
+    display: block;
+}
+
+.upload_photo input {
+    cursor: pointer;
+    color: white;
+    background-color: #FB9D03;
 }
 
 .descr .status {

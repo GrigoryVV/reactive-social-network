@@ -3,6 +3,7 @@ import css from './Settings.module.css';
 import { Field, reduxForm } from 'redux-form';
 import { Input, Textarea } from '../common/CustomFields/CustomFields';
 import { required, maxLength, minLength } from '../../utils/validators/fieldValidators';
+import { capitalizeString } from '../../utils/helpers/capitalizeString';
 
 const maxLength30 = maxLength(30);
 const maxLength300 = maxLength(300);
@@ -10,6 +11,7 @@ const maxLength100 = maxLength(100);
 const minLength2 = minLength(2);
 
 let SettingsForm = (props) => {
+
     return (
         <form className={css.form_layout} onSubmit={props.handleSubmit}>
             <div className={css.form_section}>
@@ -70,97 +72,25 @@ let SettingsForm = (props) => {
             </div>
             <div className={css.form_section}>
                 <h3 className={css.form_section_name}>Contacts</h3>
-                <div className="flex_wrap">
-                    <span className={css.field_label}>
-                        Facebook page:
-                    </span>
-                    <div className={css.field}>
-                        <Field type="text"
-                            component={Input}
-                            name="facebook"
-                            className={css.text_input}
-                            validate={[maxLength100]}
-                        />
-                    </div>
-                </div>
-                <div className="flex_wrap">
-                    <span className={css.field_label}>
-                        Vk page:
-                    </span>
-                    <div className={css.field}>
-                        <Field type="text"
-                            component={Input}
-                            name="vk"
-                            className={css.text_input}
-                            validate={[maxLength100]}
-                        />
-                    </div>
-                </div>
-                <div className="flex_wrap">
-                    <span className={css.field_label}>
-                        Twitter page:
-                    </span>
-                    <div className={css.field}>
-                        <Field type="text"
-                            component={Input}
-                            name="twitter"
-                            className={css.text_input}
-                            validate={[maxLength100]}
-                        />
-                    </div>
-                </div>
-                <div className="flex_wrap">
-                    <span className={css.field_label}>
-                        Instagram account:
-                    </span>
-                    <div className={css.field}>
-                        <Field type="text"
-                            component={Input}
-                            name="instagram"
-                            className={css.text_input}
-                            validate={[maxLength100]}
-                        />
-                    </div>
-                </div>
-                <div className="flex_wrap">
-                    <span className={css.field_label}>
-                        Youtube channel:
-                    </span>
-                    <div className={css.field}>
-                        <Field type="text"
-                            component={Input}
-                            name="youtube"
-                            className={css.text_input}
-                            validate={[maxLength100]}
-                        />
-                    </div>
-                </div>
-                <div className="flex_wrap">
-                    <span className={css.field_label}>
-                        Github page:
-                    </span>
-                    <div className={css.field}>
-                        <Field type="text"
-                            component={Input}
-                            name="github"
-                            className={css.text_input}
-                            validate={[maxLength100]}
-                        />
-                    </div>
-                </div>
-                <div className="flex_wrap">
-                    <span className={css.field_label}>
-                        Website:
-                    </span>
-                    <div className={css.field}>
-                        <Field type="text"
-                            component={Input}
-                            name="website"
-                            className={css.text_input}
-                            validate={[maxLength100]}
-                        />
-                    </div>
-                </div>
+                {
+                    Object.keys(props.profileInfo.contacts).map(key => {
+                        return (
+                            <div className="flex_wrap">
+                                <span className={css.field_label}>
+                                    {capitalizeString(key) + ":"}
+                                </span>
+                                <div className={css.field}>
+                                    <Field type="text"
+                                        component={Input}
+                                        name={`contacts.${key}`}
+                                        className={css.text_input}
+                                        validate={[maxLength100]}
+                                    />
+                                </div>
+                            </div>
+                        )
+                    })
+                }
             </div>
         </form>
     );
@@ -169,7 +99,7 @@ let SettingsForm = (props) => {
 SettingsForm = reduxForm({ form: "settings" })(SettingsForm);
 
 const Settings = (props) => {
-    let handleSettingsUpdate = (data) => {
+    const handleSettingsUpdate = (data) => {
         props.updateUserData(data);
     }
 
@@ -184,6 +114,7 @@ const Settings = (props) => {
                 }
                 <SettingsForm profileInfo={props.profileInfo}
                     onSubmit={handleSettingsUpdate}
+                    initialValues={props.profileInfo}
                 />
             </div>
         </div>

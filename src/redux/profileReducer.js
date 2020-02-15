@@ -3,6 +3,7 @@ import { profileAPI } from "../api/api";
 const ADD_POST = 'profile/ADD_POST';
 const SET_PROFILE_INFO = 'profile/SET_PROFILE_INFO';
 const SET_USER_STATUS = 'profile/SET_USER_STATUS';
+const SET_NEW_PHOTO = 'profile/SET_NEW_PHOTO';
 
 let initialState = {
     posts: [
@@ -81,6 +82,14 @@ function profileReducer(state = initialState, action) {
                 ...state,
                 status: action.userStatus
             };
+        case SET_NEW_PHOTO:
+            return {
+                ...state,
+                profileInfo: {
+                    ...state.profileInfo,
+                    photos: action.photos
+                }
+            };
         default:
             return state;
     }
@@ -94,17 +103,22 @@ export const addPost = (newPostText, author) => {
         author
     }
 }
-
-export const setProfileInfo = (profileInfo) => {
+const setProfileInfo = (profileInfo) => {
     return {
         type: SET_PROFILE_INFO,
         profileInfo
     }
 }
-export const setUserStatus = (userStatus) => {
+const setUserStatus = (userStatus) => {
     return {
         type: SET_USER_STATUS,
         userStatus
+    }
+}
+const setNewPhoto = (photos) => {
+    return {
+        type: SET_NEW_PHOTO,
+        photos
     }
 }
 
@@ -124,6 +138,16 @@ export const updateUserStatus = (status) => async (dispatch) => {
 
     if (data.resultCode === 0) {
         dispatch(setUserStatus(status));
+    }
+}
+export const updateUserPhoto = (photo) => async (dispatch) => {
+    const photoData = new FormData();
+    photoData.append("image", photo);
+
+    let data = await profileAPI.updateUserPhoto(photoData);
+
+    if (data.resultCode === 0) {
+        dispatch(setNewPhoto(data.data.photos));
     }
 }
 
