@@ -69,6 +69,11 @@ function Login(props) {
         <div className={css.wrap}>
             <div className="block">
                 <h2 className="block_name">Please Login</h2>
+                <p className={css.info}>
+                    For testing purposes:<br/>
+                    <b>Email: free@samuraijs.com</b><br/>
+                    <b>Password: free</b>
+                </p>
                 <LoginForm onSubmit={handleLogin}/>
             </div>
         </div>
