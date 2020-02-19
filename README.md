@@ -25,6 +25,6 @@ Reactive Social Network это домашний проект социально�
 * React/Redux
 * Redux-thunk
 * Redux-Form
-* High Order Components
+* Higher-Order Components
 * React Hooks
 * Axios
