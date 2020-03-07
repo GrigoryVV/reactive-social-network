@@ -66,3 +66,46 @@ export const authAPI = {
             .then(response => response.data);
     }
 };
+
+export const dialogsAPI = {
+    getAllDialogs() {
+        return samuraiAxios.get(`dialogs`)
+            .then(response => response.data);
+    },
+    getAllNewMessages() {
+        return samuraiAxios.get(`dialogs/messages/new/count`)
+            .then(response => response.data);
+    },
+    startDialogWithUser(userId) {
+        return samuraiAxios.put(`dialogs/${userId}`)
+            .then(response => response.data);
+    },
+    getUserMessages(userId) {
+        return samuraiAxios.get(`dialogs/${userId}/messages`)
+            .then(response => response.data);
+    },
+    sendMessageToUser(userId, body) {
+        return samuraiAxios.post(`dialogs/${userId}/messages`, {body})
+            .then(response => response.data);
+    },
+    getMessageStatus(messageId) {
+        return samuraiAxios.get(`dialogs/messages/${messageId}/viewed`)
+            .then(response => response.data);
+    },
+    claimMessageToSpam(messageId) {
+        return samuraiAxios.post(`dialogs/messages/${messageId}/spam`)
+            .then(response => response.data);
+    },
+    deleteMessage(messageId) {
+        return samuraiAxios.delete(`dialogs/messages/${messageId}`)
+            .then(response => response.data);
+    },
+    restoreMessage(messageId) {
+        return samuraiAxios.put(`dialogs/messages/${messageId}/restore`)
+            .then(response => response.data);
+    },
+    getNewerUserMessages(userId, date) {
+        return samuraiAxios.get(`dialogs/${userId}/messages/new?newerThen=${date}`)
+            .then(response => response.data);
+    },
+};
